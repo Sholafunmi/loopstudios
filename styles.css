@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    background: url(./images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    padding:0 9%;
+    padding-top: 50px;
+}
+
+.links{
+   display: flex;
+   gap: 2em;
+}
+.links li {
+    list-style: none;
+}
+.links li a {
+   text-decoration: none;
+   color: #fff;
+ 
+ 
+}
+.links li a:hover{
+    border-bottom: 2px solid aliceblue;
+ 
+ }
+.menu{
+    display: none;
+}
+.headerText{
+     display: flex;
+    color: #fff;  
+    font-family: 'Dancing Script', cursive;;
+}
+.headerText p{
+    font-size: 45px;
+    text-transform: uppercase;
+    padding-left: .5em;
+    border: 1px solid #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    width: 35%;
+    margin-top: 4em;
+    margin-left: 9%; 
+}
+/* DESKTOP HEADER SECTION ENDS HERE */
+
+
+/* MEDIA QUERY FOR HEADER MOBILE VIEW  */
+@media only screen and (max-width:800px){
+    header{
+        height: 100vh;
+        background: url(./images/mobile/image-hero.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .links{
+        display: none;
+     }
+     .menu{
+        display: block;
+     }
+     .logo{
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .headerText{
+        /* display: flex;
+       color: #fff; */
+       width: 100%;
+   }
+   .headerText p{
+         width: 100%;
+          margin-left: 9%; 
+          margin-right: 9%;
+          border: 3px solid #fff;
+   }   
+}
+
+
+/*  INTERACTIVE VR SECTION STARTS HERE */
+.vr{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.vrImage{
+    width: 60%;
+    height: 450px;
+    background: url(./images/desktop/image-interactive.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5em;
+}
+
+.vrText{
+    position: absolute;
+    right: 19em;
+    top: 60em;
+    background-color: #fff;
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    width: 70%;
+}
+.text h3{
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: .5em;
+}
+.text p{
+    font-size: 12px;
+}
+
+/* MEDIA QUERY FOR INTERACTIVE SECTION  MOBILE VIEW  */
+@media only screen and (max-width:800px){
+    .vr{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2em 0;
+    }
+    .vrImage{
+        display: flex;
+        width: 90%;
+        height: 300px;
+        background: url(./images/mobile/image-interactive.jpg);
+        background-position: center;
+        background-size: cover;
+      
+        
+    }
+    
+    .vrText{
+        position: static;
+        background-color: #fff;
+        width: 80%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .text{
+        width: 100%;
+    }
+    .text h3{
+        font-size: 30px;
+        font-weight: 100;
+        text-transform: uppercase;
+        padding-bottom: .5em;
+    }
+    .text p{
+        font-size: 18px;
+    }
+}
+
+/* CREATION STARTS HERE */
+.creations{
+    height: max-content;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5em;
+
+}
+
+.creation{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+.creation p{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size:25px ;
+}
+.creation a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+
+}
+.card{
+    width: 85%;
+    height: fit-content;
+    display: flex;
+    gap: 1em;
+    padding-bottom: 1em;
+
+}
+.card p{
+    color: #fff;
+     font-size: 25px;
+    font-weight: light;
+    display: flex; 
+    padding-top: 320px;
+    padding-left: 60px;
+}
+
+.cardContent1{
+    width: 25%;
+    height: 400px;
+    background: url(./images/desktop/image-deep-earth.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cardContent2{
+    width: 25%;
+    height: 400px;
+    background: url(./images/desktop/image-night-arcade.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cardContent3{
+    width: 25%;
+    height: 400px;
+    background: url(./images/desktop/image-soccer-team.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cardContent4{
+    width: 25%;
+    height: 400px;
+    background: url(./images/desktop/image-grid.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cardContent5{
+    width: 25%;
+    height: 400px;
+    background: url(./images/desktop/image-from-above.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.cardContent6{
+    width: 25%;
+    height: 400px;
+    background: url(./images/desktop/image-pocket-borealis.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cardContent7{
+    width: 25%;
+    height: 400px;
+    background: url(./images/desktop/image-curiosity.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cardContent8{
+    width: 25%;
+    height: 400px;
+    background: url(./images/desktop/image-fisheye.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* MEDIA QUERY FOR CREATION SECTION STARTS HERE */
+@media only screen and (max-width:800px){
+    
+    .creation{
+        justify-content: center;
+    }
+    .creation p{
+        font-size:25px ;
+    }
+    .creation a{
+       position: absolute;
+       top: 385%;
+       font-size: 20px;
+       padding: 10px 40px;
+       font-weight: light;
+    }
+    .card{
+        width: 90%;
+        flex-direction: column;
+    }
+    .card p{
+        padding-top: 60px;
+        padding-left: 30px;
+    }
+    .cardContent1{
+         width: 100%;
+        height: 150px;
+         background: url(./images/mobile/image-deep-earth.jpg);
+          background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .cardContent2{
+        width: 100%;
+        height: 150px;
+        background: url(./images/mobile/image-night-arcade.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+    }
+    .cardContent3{
+        width: 100%;
+        height: 150px;
+        background: url(./images/mobile/image-soccer-team.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      
+    }
+    .cardContent4{
+        width: 100%;
+        height: 150px;
+        background: url(./images/mobile/image-grid.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .cardContent5{
+        width: 100%;
+        height: 150px;
+        background: url(./images/mobile/image-from-above.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+    .cardContent6{
+        width: 100%;
+        height: 150px;
+        background: url(./images/mobile/image-pocket-borealis.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .cardContent7{
+        width: 100%;
+        height: 150px;
+        background: url(./images/mobile/image-curiosity.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .cardContent8{
+        width: 100%;
+        height: 150px;
+        background: url(./images/mobile/image-fisheye.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat;
+        margin-bottom: 3em;
+    }
+}
+
+footer{
+    width: 100%;
+    background: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.footerContent{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 0;
+}
+.foot1{
+    
+}
+.footLogo{
+    padding-bottom: 15px;
+
+}
+.footLinks{
+    display: flex;
+     gap: 2.5em;
+}
+.footLinks li{
+    list-style: none;
+    color: #fff;
+  
+}
+.footLinks li a{
+    color: #fff;
+    text-decoration: none;
+     
+}
+
+.foot2{
+    display: flex;
+    flex-direction: column;
+}
+.socials{
+     padding-bottom: 15px;
+     padding-left: 9em;
+     
+}
+.socials img{
+    width: 20px;
+    padding-right: 8px;
+   
+}
+.foot2 p{
+    color: #928e8e;
+}
+
+/* MEDIA QUERY FOR FOOTER SECTION STARTS HERE */
+@media only screen and (max-width:800px){
+    footer{
+       
+        justify-content: center;
+        padding: 2.5em 0;
+    }
+    .footerContent{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .foot1{
+        width: 90%;
+    }
+    .footLogo{
+        padding-bottom: 15px;
+    
+    }
+    .footLinks{
+        display: flex;
+        flex-direction: column;
+        padding-bottom:2em;
+         /* gap: 2.5em; */
+    }
+    .footLinks li{
+        list-style: none;
+        color: #fff;
+      
+    }
+    .footLinks li a{
+        color: #fff;
+        text-decoration: none;
+         
+    }
+    
+    .foot2{
+        justify-content: center;
+    }
+    .socials{
+         padding-bottom: 20px;
+         padding-left: 0;
+         
+    }
+    .socials a img{
+        width: 30px;
+        padding-right: 15px;
+    }
+    .socials a {
+        text-decoration: none;
+    }
+
+    .foot2 p{
+        padding-top: 10px;
+    }
+    
+}
